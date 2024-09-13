@@ -30,7 +30,7 @@ const sections = [
 
 export default function AboutUs() {
   return (
-    <main className="my-12  mt-[300px] font-nunito mx-auto px-6 sm:px-6 lg:px-24 ">
+    <main className="my-12  mt-[150px] font-nunito mx-auto px-6 sm:px-6 lg:px-24 ">
       <h1 className="font-extrabold text-5xl mb-12 text-left text-orange nest-hub:text-size-18 galaxy-fold:text-size-18 ">
         Features of MamaMind
       </h1>

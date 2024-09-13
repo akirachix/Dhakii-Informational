@@ -28,7 +28,7 @@ const sections = [
 
 export default function AboutUs() {
   return (
-    <main className="my-12 font-nunito mx-auto px-6 sm:px-6 lg:px-24">
+    <main className="my-12 mt-[100px] font-nunito mx-auto px-6 sm:px-6 lg:px-24">
       {" "}
       {/* Increased margin-top to 350px */}
       <h1 className="font-extrabold text-5xl mb-12 text-orange nest-hub:text-size-18 ">
