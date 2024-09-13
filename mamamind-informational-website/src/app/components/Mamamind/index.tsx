@@ -3,7 +3,7 @@ import React from "react";
 
 const sections = [
   {
-    id: "exercise",
+    id: "explore",
     imageSrc: "/images/explore.png",
     altText: "Explore image",
     title: "Explore MamaMind",
@@ -11,7 +11,7 @@ const sections = [
       "Choose from our comprehensive care guides covering a range of topics to support and enhance your postpartum journey.",
   },
   {
-    id: "vision",
+    id: "exercise",
     imageSrc: "/images/mental.png",
     altText: "Exercise image",
     title: "Try Exercising",
@@ -19,7 +19,7 @@ const sections = [
       "Enhance your exercise routine with MamaMind’s exercise tips for improved focus and concentration.",
   },
   {
-    id: "goal",
+    id: "mental",
     imageSrc: "/images/exercises.png",
     altText: "Experience Image",
     title: "Experience MamaMind",
@@ -28,7 +28,7 @@ const sections = [
   },
 ];
 
-export default function AboutUs() {
+export default function Features() {
   return (
     <main className="my-12  mt-[150px] font-nunito mx-auto px-6 sm:px-6 lg:px-24 ">
       <h1 className="font-extrabold text-5xl mb-12 text-left text-orange nest-hub:text-size-18 galaxy-fold:text-size-18 ">
