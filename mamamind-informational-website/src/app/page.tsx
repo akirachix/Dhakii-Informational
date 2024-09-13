@@ -1,7 +1,13 @@
-export default function HomePage() {
-  return (
-    <main className="bg-white">
+
       
+import AboutUs from "./components/Aboutus";
+import Navbar from "./components/Navbar";
+
+export default function Home() {
+  return (
+    <main>
+      <AboutUs />
+
     </main>
   );
 }

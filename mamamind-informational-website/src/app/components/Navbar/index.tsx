@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("#home"); 
+  const [activeLink, setActiveLink] = useState("#home");
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -15,12 +15,12 @@ export default function Navbar() {
   };
 
   const handleLinkClick = (section: SetStateAction<string>) => {
-    setActiveLink(section); 
+    setActiveLink(section);
   };
 
   return (
-    <nav className="bg-white p-6 font-nunito z-50 fixed top-0 left-0 w-full">
-      <div className="max-w-full mx-auto px-5 md:px-[24px]"> 
+    <nav className="bg-white p-6 font-nunito z-50 fixed top-0 left-0 w-full pb-6 md:pb-[20px] md:mb-[10px]"> {/* Added margin-bottom of 10px for desktop */}
+      <div className="max-w-full mx-auto px-5 md:px-[24px]">
         <div className="flex justify-between items-center h-16">
           {!isOpen && (
             <div className="flex-shrink-0 pt-5 md:pt-[15px]">
