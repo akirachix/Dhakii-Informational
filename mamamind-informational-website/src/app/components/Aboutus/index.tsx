@@ -28,14 +28,14 @@ const sections = [
 
 export default function AboutUs() {
   return (
-    <main className="my-12 font-nunito mx-auto px-6 sm:px-6 lg:px-24">
+    <main className="my-12 mt-[300px] font-nunito mx-auto px-6 sm:px-6 lg:px-24"> {/* Increased margin-top to 350px */}
       <h1 className="font-extrabold text-5xl mb-12 text-orange nest-hub:text-size-18">
         About Us
       </h1>
       <div className="flex flex-col ipad:flex-col sm:flex-row gap-8 ipad:gap-8 sm:gap-12">
         {sections.map(({ id, imageSrc, altText, title, text }) => (
           <div key={id} className="flex flex-col items-center text-center ipad:items-center ipad:text-start sm:items-start sm:text-left nest-hub:text-size-18">
-            <div className="w-32 h-32 ipad:w-32 ipad:h-32 sm:w-44 sm:h-44 mb-4">
+            <div className="w-28 h-28 ipad:w-28 ipad:h-28 sm:w-36 sm:h-36 mt-[15px] mb-4">
               <img
                 src={imageSrc}
                 alt={altText}
@@ -54,4 +54,3 @@ export default function AboutUs() {
     </main>
   );
 }
-
