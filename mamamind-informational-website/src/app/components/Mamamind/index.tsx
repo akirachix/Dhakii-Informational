@@ -30,8 +30,8 @@ const sections = [
 
 export default function AboutUs() {
   return (
-    <main className="my-12 font-nunito mx-auto px-6 sm:px-6 lg:px-24 ">
-      <h1 className="font-extrabold text-5xl mb-12 text-left text-orange nest-hub:text-size-18 galaxy-fold:text-size-18">
+    <main className="my-12  mt-[300px] font-nunito mx-auto px-6 sm:px-6 lg:px-24 ">
+      <h1 className="font-extrabold text-5xl mb-12 text-left text-orange nest-hub:text-size-18 galaxy-fold:text-size-18 ">
         Features of MamaMind
       </h1>
       <div className="flex flex-col ipad:flex-col sm:flex-row gap-8 ipad:gap-8 sm:gap-12">
