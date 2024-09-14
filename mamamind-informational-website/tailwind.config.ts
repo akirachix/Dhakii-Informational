@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 const config: Config = {
+
  content: [
    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -18,6 +19,7 @@ const config: Config = {
      colors: {
        'blue': '#02A6A6',
        'orange': '#F18721',
+     
      },
      fontSize: {
        'size-24': '24px',
@@ -28,9 +30,18 @@ const config: Config = {
        'nest-hub': { 'raw': '(min-width: 1024px) and (max-width: 1024px) and (min-height: 600px) and (max-height: 600px)' },
        'galaxy-fold': { 'raw': '(min-width: 280px) and (max-width: 280px) and (min-height: 653px) and (max-height: 653px)' },
        'surface-pro': { 'raw': '(min-width: 768px) and (max-width: 1366px)' } ,
+       
      },
    },
  },
  plugins: [],
-};
+
+
+
+
+     
+    };
+ 
+
+
 export default config;
