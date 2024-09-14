@@ -6,7 +6,7 @@ import 'typeface-nunito';
 
 export default function Homes() {
   return (
-    <main className="flex flex-col lg:flex-row-reverse ipad:flex-col md:flex-row  justify-between items-center font-nunito px-4 sm:px-8 md:px-12  lg:px-24 mt-8 mt-[20px] ">
+    <main className="flex flex-col lg:flex-row-reverse ipad:flex-col md:flex-row  justify-between items-center font-nunito px-4 sm:px-8 md:px-12  lg:px-24 mt-8  mt-[200px]  ">
       {/* <div className="overflow-hidden w-1/12 md:w-1/2 ipad:w-full md:order-2 border items-center flex justify-end"> */}
         <Image
           src="/Images/Mother-pic.png"

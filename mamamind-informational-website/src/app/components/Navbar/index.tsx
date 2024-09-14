@@ -112,91 +112,92 @@ export default function Navbar() {
       </div>
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden bg-[#02A6A6] absolute top-0 left-0w-full h-screen z-50">
-          <div className="flex justify-between items-center p-6">
-            <button
-              onClick={toggleMenu}
-              className="text-white focus:outline-none"
-            >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-          </div>
-          <div className="flex flex-col items-start space-y-6 pt-32 pl-6 text-[27px] text-white font-bold">
-            <Link
-              href="#home"
-              onClick={() => {
-                handleLinkClick("#home");
-                handleMenuClick();
-              }}
-              className={`${
-                activeLink === "#home" ? "text-[#F18721]" : "text-white"
-              } hover:text-[#F18721]`}
-            >
-              Home
-            </Link>
-            <Link
-              href="#about"
-              onClick={() => {
-                handleLinkClick("#about");
-                handleMenuClick();
-              }}
-              className={`${
-                activeLink === "#about" ? "text-[#F18721]" : "text-white"
-              } hover:text-[#F18721]`}
-            >
-              About Us
-            </Link>
-            <Link
-              href="#features" 
-              onClick={() => {
-                handleLinkClick("#features");
-                handleMenuClick();
-              }}
-              className={`${
-                activeLink === "#features" ? "text-[#F18721]" : "text-white"
-              } hover:text-[#F18721]`}
-            >
-              Features
-            </Link>
-            <Link
-              href="#demo"
-              onClick={() => {
-                handleLinkClick("#demo");
-                handleMenuClick();
-              }}
-              className={`${
-                activeLink === "#demo" ? "text-[#F18721]" : "text-white"
-              } hover:text-[#F18721]`}
-            >
-              Demo
-            </Link>
-            <Link
-              href="#contact"
-              onClick={() => {
-                handleLinkClick("#contact");
-                handleMenuClick();
-              }}
-              className={`${
-                activeLink === "#contact" ? "text-[#F18721]" : "text-white"
-              } hover:text-[#F18721]`}
-            >
-              Contact
-            </Link>
-          </div>
-        </div>
-      )}
+  <div className="lg:hidden bg-[#02A6A6] fixed inset-0 w-full h-auto z-50 overflow-y-auto">
+    <div className="flex justify-between items-center p-6">
+      <button
+        onClick={toggleMenu}
+        className="text-white focus:outline-none"
+      >
+        <svg
+          className="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+    </div>
+    <div className="flex flex-col items-start space-y-6 pt-32 px-6 text-[27px] text-white font-bold w-full">
+      <Link
+        href="#home"
+        onClick={() => {
+          handleLinkClick("#home");
+          handleMenuClick();
+        }}
+        className={`${
+          activeLink === "#home" ? "text-[#F18721]" : "text-white"
+        } hover:text-[#F18721] w-full`}
+      >
+        Home
+      </Link>
+      <Link
+        href="#about"
+        onClick={() => {
+          handleLinkClick("#about");
+          handleMenuClick();
+        }}
+        className={`${
+          activeLink === "#about" ? "text-[#F18721]" : "text-white"
+        } hover:text-[#F18721] w-full`}
+      >
+        About Us
+      </Link>
+      <Link
+        href="#features"
+        onClick={() => {
+          handleLinkClick("#features");
+          handleMenuClick();
+        }}
+        className={`${
+          activeLink === "#features" ? "text-[#F18721]" : "text-white"
+        } hover:text-[#F18721] w-full`}
+      >
+        Features
+      </Link>
+      <Link
+        href="#demo"
+        onClick={() => {
+          handleLinkClick("#demo");
+          handleMenuClick();
+        }}
+        className={`${
+          activeLink === "#demo" ? "text-[#F18721]" : "text-white"
+        } hover:text-[#F18721] w-full`}
+      >
+        Demo
+      </Link>
+      <Link
+        href="#contact"
+        onClick={() => {
+          handleLinkClick("#contact");
+          handleMenuClick();
+        }}
+        className={`${
+          activeLink === "#contact" ? "text-[#F18721]" : "text-white"
+        } hover:text-[#F18721] w-full`}
+      >
+        Contact
+      </Link>
+    </div>
+  </div>
+)}
+
     </nav>
   );
 }
