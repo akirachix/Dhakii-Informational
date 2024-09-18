@@ -25,6 +25,7 @@ export default function Navbar() {
   };
 
   return (
+    
     <nav className="bg-white p-6 font-nunito z-50 fixed top-0 left-0 w-full pb-6 md:pb-[20px] md:mb-[10px]">
       <div className="max-w-full mx-auto px-5 md:px-[24px]">
         <div className="flex justify-between items-center h-16">
@@ -39,7 +40,7 @@ export default function Navbar() {
               </Link>
             </div>
           )}
-          {/* Desktop Menu */}
+          
           <div className="hidden nest-hub:gap-11 nest-hub:space-x-[80] lg:flex space-x-[112px] text-[27px] font-bold pt-[92px]">
             <Link
               href="#home"
@@ -48,7 +49,7 @@ export default function Navbar() {
                 activeLink === "#home" ? "text-[#02A6A6]" : "text-black"
               } hover:text-[#02A6A6] font-bold`}
             >
-              Home
+            Home
             </Link>
             <Link
               href="#about"

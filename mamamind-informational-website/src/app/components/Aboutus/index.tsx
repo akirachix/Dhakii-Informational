@@ -34,7 +34,7 @@ export default function AboutUs() {
       <h1 className="font-extrabold text-5xl sm: mb-12 text-orange nest-hub:text-size-18 ">
         About Us
       </h1>
-      <div className="flex flex-col ipad:flex-col sm:flex-row gap-8 ipad:gap-8 sm:gap-12">
+      <div className="flex flex-col ipad:flex-col mb-20 sm:flex-row gap-8 ipad:gap-8 sm:gap-12">
         {sections.map(({ id, imageSrc, altText, title, text }) => (
           <div
             key={id}

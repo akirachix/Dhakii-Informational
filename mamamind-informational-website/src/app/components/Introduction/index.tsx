@@ -6,7 +6,7 @@ import 'typeface-nunito';
 
 export default function Homepage() {
   return (
-    <main id='home'  className="flex flex-col lg:flex-row-reverse ipad:flex-col md:flex-row  justify-between items-center font-nunito px-4 sm:px-8 md:px-12  lg:px-24 mt-8  mt-[200px]  ">
+    <main id='home'  className="flex flex-col lg:flex-row-reverse ipad:flex-col md:flex-row  justify-between items-center font-nunito px-4 sm:px-8 md:px-12  lg:px-24 mt-8 ">
         <Image
           src="/Images/Mother-pic.png"
           className=" object-cover md:w-5/12 lg:w-3/12 w-9/12"
