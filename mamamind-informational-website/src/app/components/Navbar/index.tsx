@@ -1,22 +1,31 @@
 "use client";
-import { SetStateAction, useState } from "react";
+
+import { useState } from "react";
 import Link from "next/link";
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("#home");
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   const handleMenuClick = () => {
     setIsOpen(false);
   };
-  const handleLinkClick = (section: SetStateAction<string>) => {
-    setActiveLink(section);
+
+  const handleScroll = (sectionId: string) => {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
   };
+
+  const handleLinkClick = (section: string) => {
+    setActiveLink(section);
+    handleScroll(section.replace("#", ""));
+  };
+
   return (
     <nav className="bg-white p-6 font-nunito z-50 fixed top-0 left-0 w-full pb-6 md:pb-[20px] md:mb-[10px]">
-      {" "}
-      {/* Added margin-bottom of 10px for desktop */}
       <div className="max-w-full mx-auto px-5 md:px-[24px]">
         <div className="flex justify-between items-center h-16">
           {!isOpen && (
@@ -51,7 +60,7 @@ export default function Navbar() {
               About Us
             </Link>
             <Link
-              href="#features" // Adding Features Page Link
+              href="#features"
               onClick={() => handleLinkClick("#features")}
               className={`${
                 activeLink === "#features" ? "text-[#02A6A6]" : "text-black"
@@ -112,7 +121,7 @@ export default function Navbar() {
       </div>
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden bg-[#02A6A6] absolute top-0 left-0w-full h-screen z-50">
+        <div className="lg:hidden bg-[#02A6A6] fixed inset-0 w-full h-auto z-50 overflow-y-auto">
           <div className="flex justify-between items-center p-6">
             <button
               onClick={toggleMenu}
@@ -133,7 +142,7 @@ export default function Navbar() {
               </svg>
             </button>
           </div>
-          <div className="flex flex-col items-start space-y-6 pt-32 pl-6 text-[27px] text-white font-bold">
+          <div className="flex flex-col items-start space-y-6 pt-32 px-6 text-[27px] text-white font-bold w-full">
             <Link
               href="#home"
               onClick={() => {
@@ -142,7 +151,7 @@ export default function Navbar() {
               }}
               className={`${
                 activeLink === "#home" ? "text-[#F18721]" : "text-white"
-              } hover:text-[#F18721]`}
+              } hover:text-[#F18721] w-full`}
             >
               Home
             </Link>
@@ -154,19 +163,19 @@ export default function Navbar() {
               }}
               className={`${
                 activeLink === "#about" ? "text-[#F18721]" : "text-white"
-              } hover:text-[#F18721]`}
+              } hover:text-[#F18721] w-full`}
             >
               About Us
             </Link>
             <Link
-              href="#features" 
+              href="#features"
               onClick={() => {
                 handleLinkClick("#features");
                 handleMenuClick();
               }}
               className={`${
                 activeLink === "#features" ? "text-[#F18721]" : "text-white"
-              } hover:text-[#F18721]`}
+              } hover:text-[#F18721] w-full`}
             >
               Features
             </Link>
@@ -178,7 +187,7 @@ export default function Navbar() {
               }}
               className={`${
                 activeLink === "#demo" ? "text-[#F18721]" : "text-white"
-              } hover:text-[#F18721]`}
+              } hover:text-[#F18721] w-full`}
             >
               Demo
             </Link>
@@ -190,7 +199,7 @@ export default function Navbar() {
               }}
               className={`${
                 activeLink === "#contact" ? "text-[#F18721]" : "text-white"
-              } hover:text-[#F18721]`}
+              } hover:text-[#F18721] w-full`}
             >
               Contact
             </Link>
