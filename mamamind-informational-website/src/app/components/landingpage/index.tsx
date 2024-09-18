@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <div className="flex flex-col md:flex-col lg:flex-row px-6 lg:px-12 py-6 items-center justify-between ipad:flex-col">
+    <div id='home' className="flex flex-col md:flex-col lg:flex-row px-6 lg:px-12 py-6 items-center justify-between ipad:flex-col">
       
       <div className="mb-8 mt-40 lg:order-last px-6 w-1/2">
         <img
