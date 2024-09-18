@@ -25,11 +25,14 @@ const config: Config = {
       colors: {
         Orange: '#F18721',
         Blue: '#02A6A6',
-        Black:'#000000'
+        Black:'#000000',
+        blue: "#02A6A6",
+        orange: "#F18721",
       },
       width: {
         '517px': '517px', 
       },
+   
       screens: {
         ipad: {
           raw: "(min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)",
@@ -40,6 +43,7 @@ const config: Config = {
         "nest-hub-max": {
           raw: "(min-width: 1280px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 800px)",
         },
+
         "galaxy-fold": {
           raw: "(min-width: 280px) and (max-width: 280px) and (min-height: 653px) and (max-height: 653px)",
         },
@@ -47,10 +51,12 @@ const config: Config = {
       height: {
         '758px': '758px',
       },
+
     },
   },
   plugins: [],
 };
+
 export default config;
 
 
