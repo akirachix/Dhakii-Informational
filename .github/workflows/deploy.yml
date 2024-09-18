@@ -48,7 +48,7 @@ jobs:
         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
         
       - name: Build Project Artifacts for Vercel
-        working-directory: ./mamamind-informational
+        working-directory: ./mamamind-informational-website
         run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
         
       - name: Deploy Project Artifacts to Vercel
