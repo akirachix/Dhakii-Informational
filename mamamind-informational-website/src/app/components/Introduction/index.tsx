@@ -4,6 +4,8 @@ import React from 'react';
 import Image from 'next/image';
 import 'typeface-nunito';
 
+
+
 export default function Homepage() {
   return (
     <main id='home'  className="flex flex-col lg:flex-row-reverse ipad:flex-col md:flex-row  justify-between items-center font-nunito px-4 sm:px-8 md:px-12  lg:px-24 mt-8 ">

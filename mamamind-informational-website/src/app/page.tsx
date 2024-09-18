@@ -1,7 +1,8 @@
+import "./globals.css";
+import Footer from "./components/Footer/footer";
 
-// pages/index.tsx
 import Landingpage from "./components/landingpage"
-import Features from "./components/Mamamind";
+import Features from "./components/Features";
 import AboutUs from "./components/Aboutus";
 import Navbar from "./components/Navbar";
 import Homepage from "./components/Introduction";
@@ -17,6 +18,7 @@ export default function Home() {
       <Homepage/>
       <Features />
       <AboutUs />
+      <Footer/>
     </main>
 
   )
