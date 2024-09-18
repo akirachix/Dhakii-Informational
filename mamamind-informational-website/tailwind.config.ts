@@ -18,17 +18,45 @@ const config: Config = {
      colors: {
        'blue': '#02A6A6',
        'orange': '#F18721',
+       Orange: '#F18721',
+       Blue: '#02A6A6',
+       Black:'#000000',
+       
      },
      fontSize: {
-       'size-24': '24px',
-       'size-18': '18px',
+       '37px': '37px',
+       '66px': '66px',
+       '27px': '27px',
+       "size-24": "24px",
+       "size-18": "18px",
      },
      screens: {
-        ipad: { 'raw': '(min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)' },
-       'nest-hub': { 'raw': '(min-width: 1024px) and (max-width: 1024px) and (min-height: 600px) and (max-height: 600px)' },
+      ipad: {
+        raw: "(min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)",
+      },
+      "nest-hub": {
+        raw: "(min-width: 1024px) and (max-width: 1024px) and (min-height: 600px) and (max-height: 600px)",
+      },
+      "nest-hub-max": {
+        raw: "(min-width: 1280px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 800px)",
+      },
+
+      "galaxy-fold": {
+        raw: "(min-width: 280px) and (max-width: 280px) and (min-height: 653px) and (max-height: 653px)",
+      },
      },
+     height: {
+      '758px': '758px',
+    },
+    width: {
+      '517px': '517px', 
+    },
+
    },
  },
  plugins: [],
+ 
 };
 export default config;
+
+

@@ -5,7 +5,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 const Footer = () => {
   return (
     <footer className="bg-[#02A6A6] text-white p-8 font-nunito text-base font-semibold">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between">
+      <div id='contact' className="container mx-auto flex flex-col md:flex-row justify-between nest-hub:text-size-18 galaxy-fold:text-size-18">
         <div className="mb-6 md:mb-0 space-y-2">
         <h2 className="font-bold text-[28px] md:text-[24px] mb-2">Contact us</h2>
         <p className='text-[20px] md:text-[18px]'>+254701234578</p>
