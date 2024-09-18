@@ -28,17 +28,17 @@ const sections = [
 
 export default function AboutUs() {
   return (
-    <main className="my-12 mt-[100px] font-nunito mx-auto px-6 sm:px-6 lg:px-24">
+    <main id="about" className="my-12 mt-[100px] font-nunito mx-auto px-6 sm:px-6 lg:px-24">
       {" "}
       {/* Increased margin-top to 350px */}
-      <h1 className="font-extrabold text-5xl mb-12 text-orange nest-hub:text-size-18 ">
+      <h1 className="font-extrabold text-5xl sm: mb-12 text-orange nest-hub:text-size-18 ">
         About Us
       </h1>
       <div className="flex flex-col ipad:flex-col sm:flex-row gap-8 ipad:gap-8 sm:gap-12">
         {sections.map(({ id, imageSrc, altText, title, text }) => (
           <div
             key={id}
-            className="flex flex-col items-center text-center ipad:items-center ipad:text-start sm:items-start sm:text-left nest-hub:text-size-18"
+            className="flex flex-col items-center text-left ipad:items-center ipad:text-start sm:items-start sm:text-left nest-hub:text-size-18"
           >
             <div className="w-28 h-28 ipad:w-28 ipad:h-28 sm:w-36 sm:h-36 mt-[15px] mb-4">
               <img
@@ -47,10 +47,10 @@ export default function AboutUs() {
                 className="w-full h-full object-contain"
               />
             </div>
-            <h2 className="text-blue font-extrabold text-size-24 mb-2 nest-hub:text-size-18 galaxy-fold:text-size-18 ">
+            <h2 className="text-blue font-extrabold text-size-24 nest-hub:text-size-18 galaxy-fold:text-size-18 ">
               {title}
             </h2>
-            <p className="text-size-24 text-left ipad:text-start nest-hub:text-size-18">
+            <p className="text-size-24 nest-hub:text-size-18 galaxy-fold:text-size-18 ">
               {text}
             </p>
           </div>

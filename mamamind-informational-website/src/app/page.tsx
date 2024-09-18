@@ -2,15 +2,15 @@
 import Features from "./components/Mamamind";
 import AboutUs from "./components/Aboutus";
 import Navbar from "./components/Navbar";
+import Homepage from "./components/Introduction";
 
 
-import Homes from "./component/MamaMind";
 export default function Home() {
   return (
 
     <main>
       <Navbar />
-      <Homes/>
+      <Homepage/>
       <Features />
       <AboutUs />
     </main>
